@@ -9,7 +9,7 @@
 ## Установка
 Предполагается установка с использованием composer
 ```
-composer require ssitdikov/telegraph-api-client
+composer require ruslan-sazonov/telegraph-api-client
 ```
 
 ## Пример использования

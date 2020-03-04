@@ -2,12 +2,7 @@
 
 namespace SSitdikov\TelegraphAPI\Type\ContentType;
 
-class MainHeaderType extends AbstractNodeElementType
+class MainHeaderType extends AbstractTextNodeType
 {
     protected $tag = 'h3';
-
-    public function setText($text)
-    {
-        $this->children = [$text];
-    }
 }

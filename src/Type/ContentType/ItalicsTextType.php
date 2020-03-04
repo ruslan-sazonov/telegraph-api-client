@@ -2,7 +2,7 @@
 
 namespace SSitdikov\TelegraphAPI\Type\ContentType;
 
-class ItalicsTextType extends AbstractTextNodeType
+class ItalicsTextType extends AbstractNodeElementType
 {
     protected $tag = 'em';
 }

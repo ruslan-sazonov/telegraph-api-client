@@ -2,7 +2,7 @@
 
 namespace SSitdikov\TelegraphAPI\Type\ContentType;
 
-class BlockquoteTextType extends AbstractTextNodeType
+class BlockquoteTextType extends AbstractNodeElementType
 {
     protected $tag = 'blockquote';
 }

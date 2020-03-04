@@ -38,4 +38,28 @@ class AbstractNodeElementType implements NodeElementTypeInterface
     {
         return $this->id;
     }
+
+    /**
+     * @return bool
+     */
+    public function hasChildren(): bool
+    {
+        return (bool) count($this->children);
+    }
+
+    /**
+     * @return array
+     */
+    public function getChildren()
+    {
+        return $this->children;
+    }
+
+    /**
+     * @param AbstractNodeElementType $element
+     */
+    public function addContentElement(AbstractNodeElementType $element)
+    {
+        $this->children[] = $element;
+    }
 }

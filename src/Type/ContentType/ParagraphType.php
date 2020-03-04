@@ -8,11 +8,6 @@ class ParagraphType extends AbstractNodeElementType
 
     public function setText($text)
     {
-        $this->children[] = [$text];
-    }
-
-    public function addContentElement(AbstractNodeElementType $element)
-    {
-        $this->children[] = $element;
+        $this->children = [$text];
     }
 }

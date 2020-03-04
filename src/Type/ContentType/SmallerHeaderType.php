@@ -2,7 +2,7 @@
 
 namespace SSitdikov\TelegraphAPI\Type\ContentType;
 
-class SmallerHeaderType extends AbstractTextNodeType
+class SmallerHeaderType extends AbstractNodeElementType
 {
     protected $tag = 'h4';
 }

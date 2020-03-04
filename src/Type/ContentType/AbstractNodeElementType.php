@@ -62,4 +62,12 @@ class AbstractNodeElementType implements NodeElementTypeInterface
     {
         $this->children[] = $element;
     }
+
+    /**
+     * @param string $value
+     */
+    public function setText(string $value)
+    {
+        $this->children[] = $value;
+    }
 }

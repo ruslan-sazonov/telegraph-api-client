@@ -10,9 +10,4 @@ class LinkType extends AbstractNodeElementType
     {
         $this->attrs['href'] = $href;
     }
-
-    public function setText($text)
-    {
-        $this->children = [$text];
-    }
 }

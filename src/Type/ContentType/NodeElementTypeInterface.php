@@ -9,5 +9,6 @@ interface NodeElementTypeInterface extends \JsonSerializable
     public function hasChildren(): bool;
     public function getChildren();
     public function addContentElement(AbstractNodeElementType $element);
+    public function setText(string $value);
     public function jsonSerialize();
 }

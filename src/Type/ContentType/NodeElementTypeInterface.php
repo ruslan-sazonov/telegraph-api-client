@@ -4,5 +4,7 @@ namespace SSitdikov\TelegraphAPI\Type\ContentType;
 
 interface NodeElementTypeInterface extends \JsonSerializable
 {
+    public function setId(int $id);
+    public function getId(): int;
     public function jsonSerialize();
 }

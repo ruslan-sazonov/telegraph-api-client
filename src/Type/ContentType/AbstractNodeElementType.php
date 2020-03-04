@@ -4,6 +4,7 @@ namespace SSitdikov\TelegraphAPI\Type\ContentType;
 
 class AbstractNodeElementType implements NodeElementTypeInterface
 {
+    protected $id;
     protected $tag;
     protected $attrs = [];
     protected $children = [];
@@ -20,5 +21,21 @@ class AbstractNodeElementType implements NodeElementTypeInterface
             $result['children'] = $this->children;
         }
         return $result;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
     }
 }
